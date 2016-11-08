@@ -21,6 +21,7 @@ export class NgTwoRetina implements OnInit {
   }
 
   private setImage(fileUrl: string) {
+  //TO DO - catch error -> custom warning
     this.http.get(fileUrl)
       .subscribe(
         data => { this.updateSrcAttributeOnElement(fileUrl) },
